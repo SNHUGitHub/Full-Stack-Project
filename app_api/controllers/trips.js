@@ -105,7 +105,7 @@ const tripsUpdateTrip = async (req, res) => {
                 .status(500) // server error
                 .json(err);
             });
-        })
+    })
   };
 
 module.exports = {

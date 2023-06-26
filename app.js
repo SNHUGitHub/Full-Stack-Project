@@ -16,6 +16,11 @@ const indexRouter = require('./app_server/routes/index');
 const usersRouter = require('./app_server/routes/users');
 const travelRouter = require('./app_server/routes/travel');
 const apiRouter = require('./app_api/routes/index');
+const reservationsRouter = require("./app_server/routes/reservations");
+const newsRouter = require("./app_server/routes/news");
+const checkoutRouter = require("./app_server/routes/checkout");
+const loginRouter = require("./app_server/routes/login");
+const signupRouter = require("./app_server/routes/signup");
 
 const app = express();
 
@@ -46,6 +51,11 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/travel', travelRouter);
 app.use('/api', apiRouter);
+app.use("/reservations", reservationsRouter);
+app.use("/news", newsRouter);
+app.use("/checkout", checkoutRouter);
+app.use("/login", loginRouter);
+app.use("/signup", signupRouter);
 
 // Catch unauthorized error and create 401
 app.use((err, req, res, next) => {

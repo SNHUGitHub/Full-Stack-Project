@@ -1,38 +1,57 @@
 /* Website template by freewebsitetemplates.com */
 body {
-	background: #ffb744 url(../images/bg-body.jpg) repeat left bottom;
 	font-family: "Times New Roman", Times, serif;
 	margin: 0;
 }
+
+#home_background {
+	background: url(../images/bg-pattern.jpg) repeat-x center top;
+	min-height: 900px;
+}
+
 #background {
 	background: url(../images/bg-pattern.jpg) repeat-x center top;
 	min-height: 1318px;
 }
+
 #page {
 	width: 960px;
 	margin: 0 auto;
 }
-img {
+
+#image {
 	border: 0;
+	position: absolute;
+	width: 860px;
 }
+
 /*------------------------------ Sprites ------------------------------*/
 #navigation li, #navigation li a:hover, #navigation li.selected a {
 	background-image: url(../images/bg-menu.png);
 	background-repeat: repeat-x;
 }
+
 #contents div.box, #contents div.box > div, #contents div.body {
 	background-image: url(../images/content-box.png);
 	background-repeat: no-repeat;
 }
+
 #main div.box, #main div.box > div, #main div.box > div > div {
 	background-image: url(../images/bg-box.png);
 	background-repeat: no-repeat;
+	position: relative;
 }
 /*------------------------------ HEADER ------------------------------*/
-#header {
+#header_signup {
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+#header_loggedin {
 	margin-bottom: 20px;
 	padding-top: 20px;
 }
+
 /** Logo **/
 #logo {
 	float: left;
@@ -50,7 +69,7 @@ img {
 }
 #navigation ul {
 	display: inline-block;
-	width: 860px;
+	width: auto;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -76,7 +95,7 @@ img {
 	font: bold 14px/48px Arial, Helvetica, sans-serif;
 	height: 49px;
 	text-decoration: none;
-	text-transform: uppercase;
+	text-transform: none;
 }
 #navigation li a:hover {
 	background-position: 0 -59px;
@@ -87,23 +106,26 @@ img {
 	color: #e4e1bd;
 }
 /*------------------------------ CONTENTS ------------------------------*/
+
 #contents {
 	display: inline-block;
 	width: 865px;
 	padding: 0 47px;
 }
+
 #contents h1 {
 	color: #316e66;
 	font: 26px/30px "Times New Roman", Times, serif;
 	margin: 18px 0 20px;
 	padding-left: 2px;
-	text-transform: uppercase;
+	text-transform: none;
 }
+
 #contents div.body h1, #contents h2 {
 	color: #316e66;
 	font: 30px/30px "Times New Roman", Times, serif;
 	margin: 0 0 18px;
-	text-transform: uppercase;
+	text-transform: none;
 }
 #contents h2 {
 	font-size: 22px;
@@ -145,11 +167,12 @@ img {
 }
 /** Adbox **/
 #adbox {
-	background: url(../images/bg-adbox.png) no-repeat left top;
+	background: url(../images/bg-adbox.png) no-repeat;
 	width: 852px;
 	margin: 0 auto;
 	padding: 4px 5px 18px;
 }
+
 #adbox p {
 	font-size: 16px;
 }
@@ -167,10 +190,34 @@ hr {
 }
 /** MAIN **/
 #main {
-	float: left;
-	min-height: 100px;
-	width: 566px;
+	display: inline-block;
+	width: 865px;
+	padding: 0 47px;
+	position: relative;
 }
+
+#main h1 {
+	color: #316e66;
+	font: 26px/30px "Times New Roman", Times, serif;
+	margin: 18px 0 20px;
+	padding-bottom: 15px;
+	text-transform: none;
+}
+
+#main h2 {
+	color: #316e66;
+	font: 26px/30px "Times New Roman", Times, serif;
+	margin: 18px 0 20px 150px;
+	text-transform: none;
+}
+
+#main h3 {
+	font-size: 16px;
+	margin: 18px 0 20px 150px;
+	padding-bottom: 15px;
+	margin-top: 10px;
+}
+
 #main div.box {
 	background-position: left bottom;
 	margin-bottom: 12px;
@@ -402,9 +449,9 @@ hr {
 #contact form {
 	float: right;
 	color: #5a4535;
-	height: 320px;
-	width: 420px;
-	border: 1px solid #5a4535;
+	height: 150px;
+	width: 500px;
+	border: 3px solid #5a4535;
 	padding: 19px 19px 6px;
 }
 #contact form table {
@@ -414,13 +461,13 @@ hr {
 	padding-bottom: 6px;
 }
 #contact table td:first-child {
-	font-size: 14px;
+	font-size: 20px;
 	line-height: 30px;
 	width: 180px;
-	text-transform: uppercase;
+	text-transform: none;
 }
 #contact table td.txtarea {
-	vertical-align: top;
+	vertical-align: center;
 }
 #contact form input {
 	height: 17px;
@@ -454,15 +501,61 @@ hr {
 	display: block;
 	text-transform: uppercase;
 }
+
+#login_form{
+	border: 3px solid #5a4535;
+	background-color: #ffffff;
+	width: 400px;
+	height: 150px;
+	position: relative;
+	padding: 55px 70px 25px 65px;
+	text-align: center;
+	margin: 190px 500px 200px 150px;
+	display: flex;
+}
+
+#login_form input[type=text], input[type=password] {
+	width: 300px;
+	height: 10px;
+	padding: 12px 20px 12px;
+	margin: 8px 0 8px;
+	display: inline-block;
+	border: 2px solid #010000;
+	box-sizing: border-box;
+}
+
+#signup_form{
+	border: 3px solid #5a4535;
+	background-color: #ffffff;
+	width: 400px;
+	height: 275px;
+	position: relative;
+	padding: 55px 100px 25px 65px;
+	text-align: right;
+	display: flex;
+	margin: 125px 200px 200px 150px;
+}
+
+#signup_form input[type=text], input[type=password] {
+	width: 250px;
+	height: 10px;
+	padding: 12px 20px 12px;
+	margin: 9px 12px 9px 12px;
+	display: inline-block;
+	border: 2px solid #010000;
+	box-sizing: border-box;
+}
+
 /*------------------------------ FOOTER ------------------------------*/
 #footer {
 	color: #594334;
 	font-size: 14px;
 	line-height: 48px;
 	margin: -38px 0 20px;
-	padding-top: 42px;
+	padding-top: 65px;
 	text-transform: uppercase;
 }
+
 #footer > div {
 	background-color: #ac9e94;
 	height: 48px;

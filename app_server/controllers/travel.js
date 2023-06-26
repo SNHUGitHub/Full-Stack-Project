@@ -6,7 +6,7 @@ const apiOptions = {
 /* Render travel list view */
 const renderTravelList = (rec, res, responseBody) => {
     let message = null;
-    let pageTitle = process.env.npm_package_description + " - Travel";
+    let pageTitle = "Travlr Getaways | Travel";
   
     if (!(responseBody instanceof Array)) {
         message = "API lookup error";

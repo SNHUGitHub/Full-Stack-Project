@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+	<div id="home_background">
+		<div id="page">
+			{{> header_signup }}
+			<div id="main">
+				<h2>Login</h2>
+				<div id="image">
+					<img src="images/Background.png" alt="Background" width="100%" height="auto">
+				</div>
+				<div id="login_form">
+					<form action="/action_page.php" method="post">
+						<td>Email:</td>
+						<td><input type="text" name="username" required></td>
+						<td>Password:</td>
+						<td><input type="password" name="psw" required></td>
+						<br>
+						<button type="submit">Login</button>
+						&nbsp;&nbsp;&nbsp;
+						<a href="#" style="color:dodgerblue">Forgot password?</a>
+						</br>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		{{> footer }}
+	</div>
+</body>
+</html>
