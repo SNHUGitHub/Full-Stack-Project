@@ -1,13 +1,13 @@
-Full Stack II CS 470 Final Reflection
+# Full Stack II CS 470 Final Reflection
 
-Experiences and Strengths
+# Experiences and Strengths
 •	The skills that I learned in this course to help me become a more marketable candidate in my career field are:
   o	How and when to utilize the Docker and Lambda containerization models.
   o	How to migrate a full stack application to an AWS serverless solution using services such as S3, Lambda, API Gateway, DynamoDB, and IAM. 
 •	My strengths as a software developer are my problem-solving skills and developing and finding solutions in a logical manner. 
 •	The types of roles that I am prepared to assume in a new job are software developer, QA, and full-stack developer. 
 
-Planning for Growth
+# Planning for Growth
 •	I would handle errors by ensuring that testing is scheduled into the development and migration plans for each development and migration milestone, along with clear details of success criteria for each plan. Then, I would ensure that these test plans are executed and there is a report of their results. 
 •	I would handle scaling by, first, noting the starting budget and capacity required for each resource. Then, I would create a scaling plan that includes projected capacity need and cost requirement per resource, metrics to determine usage and expenses, and a schedule of the frequency to review usage, expenses, and future scaling efforts (such as monthly, quarterly, etc.) 
 •	I would predict the cost of future usage by reviewing previous predictions versus actual usage, the delta between these two variables (waste), future growth goals, and the resources and cost required to achieve these goals. 
