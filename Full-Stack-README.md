@@ -4,7 +4,7 @@ About:
 - Project is a website that allows customers to search for and book trips, and create and sign into their account to check their itineraries. Also built an admin single-page application using Angular to run data inside the browser instead of on the server.
 - Created Software Design Document of project that includes Executive Summary, Design Constraints, Component Diagram, Sequence Diagram, Class Diagram, API Endpoints, and User Interface sections.
 
-# Technical Components and Details:
+# Technical Components and Designs:
 
 Architecture:
 - Express HTML as a web application framework that contains routes, controllers, views, and data models. This creates a web server and directory structure for the Node.js platform that allows better testing and scalability of web development tasks.
