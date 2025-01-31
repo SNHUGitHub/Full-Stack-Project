@@ -1,7 +1,8 @@
 # Travel Booking Website
 About: 
-- Full-stack development project using MEAN stack architecture for Full-Stack course. The website allows customers to search for and book trips, and create and sign into their account to check their itineraries. This project also includes an admin single-page application using Angular to run data inside the browser instead of on the server.
-
+- Full-stack development project using MEAN stack architecture for Full-Stack course.
+- Project is a website that allows customers to search for and book trips, and create and sign into their account to check their itineraries. Also built an admin single-page application using Angular to run data inside the browser instead of on the server.
+- Created Software Design Document of project that includes Executive Summary, Design Constraints, Component Diagram, Sequence Diagram, Class Diagram, API Endpoints, and User Interface sections.
 
 # Technical Components and Details:
 
