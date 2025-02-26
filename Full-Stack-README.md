@@ -20,6 +20,3 @@ Functionality:
 
 Testing:
 - Methods, such as GET and PUT, are used with data in the database to test the software’s architecture for functionality, reliability, and security. This type of testing does not rely on manual input testing but, rather, uses software to manipulate data and make calls to one or more API endpoints, and then compares the outputs of these calls with the expected results. 
-
-Reflection:
-- This course taught me how to create a full-stack development using the MEAN architecture. This is beneficial to help me achieve my goal of being a full-stack developer.
